@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: datasources
+  namespace: monitoring
+data:
+  datasources.yaml: |
+    apiVersion: 1
+    datasources:
+    - access: proxy
+      isDefault: true
+      name: Managed Prometheus
+      type: prometheus
+      url: https://aps-workspaces.us-west-2.amazonaws.com/workspaces/ws-757223b6-c56a-4836-bd6f-ac4cfe8d72fd
+      jsonData:
+        sigV4Auth: true
+        sigV4Region: us-west-2
+        sigV4AuthType: default
