@@ -26,7 +26,7 @@ spec:
   scrapeInterval: 30s
   remoteWrite:
   # TODO: replace with your workspace
-  - url: https://aps-workspaces.us-west-2.amazonaws.com/workspaces/ws-9c884b21-f09a-4113-9472-eda505f94d7d/api/v1/remote_write
+  - url: https://aps-workspaces.us-west-2.amazonaws.com/workspaces/ws-39ec160c-4127-456d-b1cd-d52eff707c91/api/v1/remote_write
     sigv4:
       region: us-west-2
     queueConfig:
